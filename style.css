@@ -1,0 +1,135 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+@font-face {
+  font-family: "Overpass";
+  src: url(font/Overpass-VariableFont_wght.ttf);
+}
+main {
+  background-color: hsl(216, 12%, 8%);
+  font-family: "Overpass";
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.how_did_we_do {
+  background-color: hsl(213, 19%, 18%);
+  border-radius: 10px;
+  padding: 15px;
+}
+.star {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  background-color: hsl(216, 10%, 29%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 15px;
+}
+.star img {
+  color: hsl(25, 97%, 53%);
+  width: 11px;
+  height: 11px;
+}
+h3 {
+  color: hsl(0, 0%, 100%);
+  word-spacing: 3px;
+  letter-spacing: 1px;
+}
+.how_did_we_do p {
+  color: hsl(217, 12%, 63%);
+  font-size: 15px;
+  padding: 15px 0 25px 0;
+}
+.buttons {
+  display: flex;
+  justify-content: space-between;
+}
+.buttons button {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  background-color: hsl(216, 10%, 29%);
+  color: hsl(217, 12%, 63%);
+  border: none;
+  font-family: "Overpass";
+}
+.button:hover {
+  background-color: hsl(217, 12%, 63%);
+  color: hsl(0, 0%, 100%);
+  cursor: pointer;
+}
+.button:active {
+  background-color: hsl(25, 97%, 53%);
+  color: hsl(0, 0%, 100%);
+  cursor: pointer;
+}
+.submit {
+  background-color: hsl(25, 97%, 53%);
+  height: 35px;
+  margin: 20px 0 10px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  color: hsl(0, 0%, 100%);
+  border: none;
+  letter-spacing: 2px;
+  font-size: 10px;
+}
+.submit:hover {
+  cursor: pointer;
+  background-color: hsl(0, 0%, 100%);
+  color: hsl(25, 97%, 53%);
+}
+
+.thank_you {
+  display: none;
+  background-color: hsl(213, 19%, 18%);
+  border-radius: 10px;
+  padding: 15px;
+  flex-direction: column;
+  align-items: center;
+}
+.illustration {
+  display: flex;
+  justify-content: center;
+  padding: 30px 0;
+}
+.rating {
+  background-color: hsl(216, 10%, 29%);
+  color: hsl(25, 97%, 53%);
+  font-size: 15px;
+  padding: 10px;
+  border: none;
+  border-radius: 20px;
+  max-width: 280px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.ty {
+  color: hsl(0, 0%, 100%);
+  padding-top: 25px;
+  padding-bottom: 15px;
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+.text {
+  color: hsl(217, 12%, 63%);
+  padding-bottom: 30px;
+}
+
+@media only screen and (min-width: 376px) {
+  .how_did_we_do,
+  .thank_you {
+    max-width: 350px;
+  }
+}
